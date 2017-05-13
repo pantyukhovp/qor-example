@@ -7,10 +7,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/qor/publish2"
 	"github.com/qor/qor"
-	"github.com/qor/qor-example/app/controllers"
-	"github.com/qor/qor-example/config"
-	"github.com/qor/qor-example/config/auth"
-	"github.com/qor/qor-example/db"
+	"github.com/pantyukhovp/qor-example/app/controllers"
+	"github.com/pantyukhovp/qor-example/config"
+	"github.com/pantyukhovp/qor-example/config/auth"
+	"github.com/pantyukhovp/qor-example/db"
 	"github.com/qor/qor/utils"
 	"github.com/qor/wildcard_router"
 )
@@ -37,6 +37,15 @@ func Router() *http.ServeMux {
 		router.GET("/products/:code", controllers.ProductShow)
 		router.GET("/category/:code", controllers.CategoryShow)
 		router.GET("/switch_locale", controllers.SwitchLocale)
+
+		cartGroup := router.Group("/cart")
+		{
+			cartGroup.GET("/", controllers.ShowCartHandler)
+			cartGroup.GET("/checkout", controllers.CheckoutCartHandler)
+			cartGroup.POST("/", controllers.AddToCartHandler)
+			cartGroup.POST("/checkout", controllers.OrderCartHandler)
+			cartGroup.DELETE("/:id", controllers.RemoveFromCartHandler)
+		}
 
 		rootMux = http.NewServeMux()
 		rootMux.Handle("/auth/", auth.Auth.NewRouter())

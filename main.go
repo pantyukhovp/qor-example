@@ -6,13 +6,13 @@ import (
 	"strings"
 
 	"github.com/gorilla/csrf"
-	"github.com/qor/qor-example/config"
-	"github.com/qor/qor-example/config/admin"
-	"github.com/qor/qor-example/config/admin/bindatafs"
-	"github.com/qor/qor-example/config/api"
-	_ "github.com/qor/qor-example/config/i18n"
-	"github.com/qor/qor-example/config/routes"
-	_ "github.com/qor/qor-example/db/migrations"
+	"github.com/pantyukhovp/qor-example/config"
+	"github.com/pantyukhovp/qor-example/config/admin"
+	"github.com/pantyukhovp/qor-example/config/admin/bindatafs"
+	"github.com/pantyukhovp/qor-example/config/api"
+	_ "github.com/pantyukhovp/qor-example/config/i18n"
+	"github.com/pantyukhovp/qor-example/config/routes"
+	_ "github.com/pantyukhovp/qor-example/db/migrations"
 	"github.com/qor/qor/utils"
 )
 

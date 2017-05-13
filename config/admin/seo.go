@@ -2,8 +2,8 @@ package admin
 
 import (
 	"github.com/qor/admin"
-	"github.com/qor/qor-example/app/models"
-	"github.com/qor/qor-example/config/seo"
+	"github.com/pantyukhovp/qor-example/app/models"
+	"github.com/pantyukhovp/qor-example/config/seo"
 	qor_seo "github.com/qor/seo"
 )
 

@@ -17,6 +17,8 @@ type User struct {
 	Birthday  *time.Time
 	Addresses []Address
 
+	Balance                float32
+
 	// Confirm
 	ConfirmToken string
 	Confirmed    bool

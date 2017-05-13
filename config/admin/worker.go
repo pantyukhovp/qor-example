@@ -9,8 +9,8 @@ import (
 	"github.com/qor/exchange/backends/csv"
 	"github.com/qor/media/oss"
 	"github.com/qor/qor"
-	"github.com/qor/qor-example/app/models"
-	"github.com/qor/qor-example/db"
+	"github.com/pantyukhovp/qor-example/app/models"
+	"github.com/pantyukhovp/qor-example/db"
 	"github.com/qor/worker"
 )
 

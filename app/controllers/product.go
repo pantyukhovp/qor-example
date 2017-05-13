@@ -8,10 +8,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/qor/action_bar"
 	"github.com/qor/qor"
-	"github.com/qor/qor-example/app/models"
-	"github.com/qor/qor-example/config"
-	"github.com/qor/qor-example/config/admin"
-	"github.com/qor/qor-example/config/seo"
+	"github.com/pantyukhovp/qor-example/app/models"
+	"github.com/pantyukhovp/qor-example/config"
+	"github.com/pantyukhovp/qor-example/config/admin"
+	"github.com/pantyukhovp/qor-example/config/seo"
 	qor_seo "github.com/qor/seo"
 )
 

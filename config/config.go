@@ -6,7 +6,7 @@ import (
 
 	"github.com/jinzhu/configor"
 	"github.com/microcosm-cc/bluemonday"
-	"github.com/qor/qor-example/config/admin/bindatafs"
+	"github.com/pantyukhovp/qor-example/config/admin/bindatafs"
 	"github.com/qor/render"
 )
 
@@ -32,7 +32,7 @@ var Config = struct {
 }{}
 
 var (
-	Root = os.Getenv("GOPATH") + "/src/github.com/qor/qor-example"
+	Root = os.Getenv("GOPATH") + "/src/github.com/pantyukhovp/qor-example"
 	View *render.Render
 )
 
